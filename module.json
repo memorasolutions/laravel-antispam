@@ -1,0 +1,16 @@
+{
+    "name": "AntiSpam",
+    "alias": "antispam",
+    "description": "Invisible anti-spam protection for Laravel - honeypot, time trap, JS token, rate limiting",
+    "keywords": ["antispam", "honeypot", "spam", "security", "rate-limit", "laravel"],
+    "priority": 0,
+    "providers": [
+        "Modules\\AntiSpam\\Providers\\AntiSpamServiceProvider"
+    ],
+    "files": [],
+    "author": {
+        "name": "MEMORA solutions",
+        "url": "https://memora.solutions",
+        "email": "info@memora.ca"
+    }
+}

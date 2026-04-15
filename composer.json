@@ -1,0 +1,31 @@
+{
+    "name": "memora/laravel-antispam",
+    "description": "Invisible anti-spam middleware for Laravel - honeypot, time trap, JS token, rate limiting. Zero friction for real users.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "MEMORA solutions",
+            "email": "info@memora.ca",
+            "homepage": "https://memora.solutions"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\AntiSpam\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\AntiSpam\\Providers\\AntiSpamServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
