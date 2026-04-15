@@ -84,7 +84,7 @@ Included: **en**, **fr**. Add your own in `lang/vendor/antispam/`.
 
 ## License
 
-MIT
+Apache 2.0
 
 ---
 
@@ -174,4 +174,4 @@ Inclus : **en**, **fr**. Ajoutez les votres dans `lang/vendor/antispam/`.
 
 ## Licence
 
-MIT
+Apache 2.0
