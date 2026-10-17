@@ -21,4 +21,26 @@ return [
 
     'rate_limit_decay_seconds' => env('ANTISPAM_DECAY_SECONDS', 3600),
 
+    'block_bots_enabled' => env('ANTISPAM_BLOCK_BOTS_ENABLED', true),
+
+    'bot_response_status' => env('ANTISPAM_BOT_RESPONSE_STATUS', 403),
+
+    'bot_user_agent_patterns' => [
+        '/python-requests/i',
+        '/curl\//i',
+        '/^Wget/i',
+        '/^Go-http-client/i',
+        '/^libwww-perl/i',
+        '/^Java\//i',
+        '/^okhttp/i',
+        '/^node-fetch/i',
+        '/^axios/i',
+        '/scrapy/i',
+        '/HttpClient/i',
+        '/PostmanRuntime/i',
+        '/^Apache-HttpClient/i',
+        '/^Faraday/i',
+        '/^GuzzleHttp/i',
+    ],
+
 ];

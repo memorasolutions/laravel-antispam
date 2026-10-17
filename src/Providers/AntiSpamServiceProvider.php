@@ -12,6 +12,7 @@ namespace Modules\AntiSpam\Providers;
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
 use Modules\AntiSpam\Http\Middleware\AntiSpam;
+use Modules\AntiSpam\Http\Middleware\BlockBots;
 
 final class AntiSpamServiceProvider extends ServiceProvider
 {
@@ -63,5 +64,6 @@ final class AntiSpamServiceProvider extends ServiceProvider
         /** @var Router $router */
         $router = $this->app->make(Router::class);
         $router->aliasMiddleware('antispam', AntiSpam::class);
+        $router->aliasMiddleware('block-bots', BlockBots::class);
     }
 }

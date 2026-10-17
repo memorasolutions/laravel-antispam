@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.0 - 2026-10-17
+
+- New `block-bots` middleware: rejects requests from scripted HTTP clients (python-requests, curl, Wget, Go-http-client, Scrapy...) with a configurable status (default 403)
+- Configurable via .env (ANTISPAM_BLOCK_BOTS_ENABLED, ANTISPAM_BOT_RESPONSE_STATUS) and the `bot_user_agent_patterns` list
+- NOTICE: attribution limited to MEMORA solutions
+
 ## 1.0.0 - 2026-04-15
 
 - Initial release
